@@ -3,67 +3,203 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manuscripts | Francy Luna Diaz</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
   <style>
+    body,
+    h1, h2, h3, h4, h5, h6,
+    p, a, li, span, div {
+      font-family: "Libre Baskerville", Georgia, "Times New Roman", serif !important;
+    }
+
     body {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  line-height: 1.6;
-}
+      color: #2B2622;
+      background: #f8f5ef;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
     .manuscript-container {
-      max-width: 1000px;
+      width: clamp(320px, 88vw, 1250px);
       margin: 60px auto;
-      padding: 0 30px;
     }
+
+    .back-link {
+      margin-bottom: 30px;
+    }
+
+    .back-link a {
+      color: #2B2622;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .back-link a:hover {
+      color: #7A624C;
+      text-decoration: underline;
+    }
+
+    .page-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .page-title h1 {
+      font-size: 34px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #2B2622;
+      margin-bottom: 12px;
+    }
+
+    .page-title hr {
+      width: 90px;
+      border: none;
+      border-top: 2px solid #B8A18B;
+    }
+
     .manuscript-card {
-      margin-bottom: 35px;
-      padding-bottom: 25px;
-      border-bottom: 1px solid #ccc;
+      background: #ffffff;
+      border: 1px solid #E8E1D8;
+      padding: 30px;
+      margin-bottom: 28px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.03);
     }
+
     .manuscript-card h2 {
-      margin-bottom: 10px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #2B2622;
+      margin-top: 0;
+      margin-bottom: 12px;
     }
+
+    .manuscript-card p {
+      color: #2B2622;
+      margin-bottom: 14px;
+    }
+
     .manuscript-card a {
-      font-weight: bold;
+      color: #7A624C;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .manuscript-card a:hover {
+      color: #5F4C3B;
+      text-decoration: underline;
+    }
+
+    .btn-custom {
+      display: inline-block;
+      min-width: 220px;
+      background: #9A8572;
+      color: #151515 !important;
+      padding: 12px 22px;
+      border-radius: 4px;
+      text-decoration: none !important;
+      margin-top: 4px;
+      margin-right: 10px;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .btn-custom:hover {
+      background: #7A624C;
+      color: #151515 !important;
+      text-decoration: none !important;
+    }
+
+    em {
+      color: #5F4C3B;
     }
   </style>
 </head>
 
 <body>
   <div class="manuscript-container">
-    <p><a href="index.html">← Back to Home</a></p>
+    <p class="back-link"><a href="index.html">← Back to Home</a></p>
 
-    <h1>Works in Progress and Under Review</h1>
+    <div class="page-title">
+      <h1>Selected Research</h1>
+      <hr>
+    </div>
 
     <div class="manuscript-card">
-      <h2>Rumors Across Borders</h2>
-      <p>My book-style dissertation examines how transnational ties shape the information environments, political attitudes, and political behavior of Latinos in the United States. Drawing on original surveys, interviews, and social media data, the project explores how cross-border social networks influence exposure to political information and misinformation.</p>
+      <h2>Rumors Across Borders: The Influence of Transnational Ties on Latinos’ Information
+        and Misinformation Environment</h2>
+      <p>My book-style dissertation examines how transnational ties shape the information environments, political attitudes, and political behavior of Latinos in the United States. Drawing on original surveys, in-depth interviews, and social media data, the project explores how cross-border social networks influence exposure to political information and misinformation. The findings suggest that Latinos with sustained transnational ties encounter distinct information environments that shape political attitudes and behavior. </p>
       <p><em>Dissertation project. Full manuscript not currently available.</em></p>
     </div>
 
     <div class="manuscript-card">
-      <h2>Latino Support for Trump</h2>
-      <p>My job market paper investigates how transnational ties and social media exposure contribute to Latino belief in political misinformation and support for Donald Trump. The paper develops and tests a theory of transnational information environments using original survey data.</p>
-      <p><a href="Rumors_website.pdf" target="_blank">View manuscript</a></p>
+      <h2>Rumors Across Borders: How Transnational Ties and Social Media Shape Latino Belief in Misinformation
+        and Support for Trump</h2>
+      <p>My job market paper investigates how transnational ties and social media exposure contribute to Latino belief in political misinformation and support for Donald Trump. The paper tests my original theory of transnational information environments using original survey data. The findings suggest that Latinos who maintain regular contact with people outside the United States are more likely to encounter political misinformation. Among frequent social media users, greater exposure is associated with higher levels of misinformation belief. In turn, misinformation belief is associated with stronger support for Trump and a greater likelihood of reporting a vote for him in 2020 and 2024.</p>
+      <p><a href="Rumors_website.pdf" class="btn-custom" target="_blank">View Manuscript</a></p>
+    </div>
+  
+    <div class="manuscript-card">
+      <h2>What Changed? Predictors of the Latino Vote Shift During the Trump Era</h2>
+      <p>My co-authored work with fellow graduate students Mario Villegas and Franshelly Martinez-Ortiz, and Professor Nicholas Valentino, examines predictors of the Latino vote shift during the Trump era. Using American National Election Study panel data from 2016 to 2024, we find that Latinos shifted toward Trump more than any other major racial or ethnic group. Our analyses suggest that the growing salience of transgender rights played an important role in explaining this shift.. </p>
+      <p><a href="ANES_Latino_Project_MPSA26_website.pdf" class="btn-custom" target="_blank">View Manuscript</a></p>
     </div>
 
     <div class="manuscript-card">
       <h2>Mobilizing Anger in Local School Board Politics</h2>
-      <p>Originally developed as a graduate student collaboration with Hilary Izatt, now Assistant Professor at SUNY Binghamton, and Zoe C. Walker, this project examines how rhetoric about discrimination and privilege shapes political mobilization among white Americans.</p>
-      <p><a href="Final_AWP_General_Submission__Website_.pdf" target="_blank">View manuscript</a></p>
-      <p><a href="LLM_Protocol_for_AWP_Open_Ended_website.pdf" target="_blank">View coding protocol</a></p>
+      <p>Originally developed as a graduate student collaboration with Hilary Izatt, now Assistant Professor at SUNY Binghamton, and Zoe C. Walker, now Assistant Professor at the University of Rochester, this project examines how rhetoric about racial discrimination and white privilege shapes political mobilization among white Americans. Using two survey experiments and analyses of open-ended responses, we find that white respondents become angrier and more willing to participate politically when presented with information attributing employment disparities to structural racism. </p>
+      <p>
+        <a href="Final_AWP_General_Submission__Website_.pdf" class="btn-custom" target="_blank">View Manuscript</a>
+</p>
     </div>
 
     <div class="manuscript-card">
-      <h2>Latino Vote Shift</h2>
-      <p>My co-authored work with Mario Villegas, Franshelly Martinez-Ortiz, and Nicholas Valentino examines predictors of the Latino vote shift during the Trump era.</p>
-      <p><a href="ANES_Latino_Project_MPSA26_website.pdf" target="_blank">View manuscript</a></p>
+      <h2>rACE Coding Scheme for Open-Ended Responses to
+        Race-Related Questions</h2>
+      <p>I developed an original coding framework for classifying and visualizing open-ended responses to race-related questions. The protocol uses large language models to measure three dimensions of racial discourse: attribution, whether respondents view racial inequality as structural or individual in origin; color-blindness, whether respondents recognize the role of race in shaping outcomes; and explicitness, whether discussions of race and racism are expressed directly or indirectly. The framework provides a scalable approach for analyzing large volumes of open-ended survey responses.  </p>
+      <p>
+      <a href="LLM_Protocol_for_AWP_Open_Ended_website.pdf" class="btn-custom" target="_blank">View Coding Protocol</a>
+      </p>
     </div>
 
     <div class="manuscript-card">
       <h2>Language and Misinformation</h2>
-      <p>My co-authored work with Franshelly Martinez-Ortiz explores whether bilingual Latinos perceive messaging reliability differently based on the language of the message.</p>
+      <p>This project, coauthored with Franshelly Martinez-Ortiz, examines whether bilingual Latinos evaluate political messages differently depending on the language in which they are presented. Using an original survey experiment, we randomly vary message language while holding all other content constant. The project tests whether messages presented in a respondent’s primary language are perceived as more credible and persuasive. </p>
     </div>
+
+    <div class="manuscript-card">
+
+      <h2>Threats Against Democracy, Anger, and Mobilization for the 2024 Presidential Election</h2>
+    
+      <p>Coauthored with Nicholas Valentino and Hilary Izatt, this project examines how perceptions of democratic threat shape political emotions and participation during the 2024 presidential election. Using original survey experiments, we investigate how messages about election integrity, democratic norms, and partisan conflict influence anger, fear, and willingness to engage in political action.</p>
+    
+    </div>
+    
+    <div class="manuscript-card">
+    
+      <h2>Effect of Racial Labels on Survey Responses</h2>
+    
+      <p>Coauthored with Sunshine Hillygus and Nicholas Valentino, this project examines whether racial labels influence how respondents interpret and answer survey questions. The study explores how different ways of describing racial and ethnic groups affect political attitudes, perceptions, and reported preferences.</p>
+    
+    </div>
+    
+    <div class="manuscript-card">
+    
+      <h2>Conspiratorial Thinking and Anti-Semitism, Islamophobia, and Anti-Black Sentiment in the United States</h2>
+    
+      <p>Coauthored with Mark Tessler and Amnon Cavari, this project examines the relationship between conspiratorial thinking and prejudice toward religious and racial minority groups in the United States. The study investigates whether individuals who are more prone to conspiracy beliefs are also more likely to express anti-Semitic, Islamophobic, and anti-Black attitudes.</p>
+    
+    </div>
+
+    <div class="manuscript-container">
+      <p class="back-link"><a href="index.html">← Back to Home</a></p>
+  
   </div>
 </body>
 </html>

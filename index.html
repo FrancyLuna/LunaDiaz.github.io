@@ -18,10 +18,10 @@
     }
 
     body {
-  color: #2B2622;
-  background: #f8f5ef;
-  line-height: 1.55;
-}
+      color: #2B2622;
+      background: #f8f5ef;
+      line-height: 1.55;
+    }
 
     .jumbotron {
       position: relative;
@@ -39,14 +39,14 @@
       top: 22px;
       left: 28px;
       z-index: 9999;
-      color: white !important;
+      color: #111111 !important;
       font-size: 28px;
       text-decoration: none;
       cursor: pointer;
     }
 
     .menu-toggle i {
-      color: rgb(6, 6, 6) !important;
+      color: #111111 !important;
     }
 
     .jumbotron .container {
@@ -97,10 +97,11 @@
       border-top: 2px solid #B8A18B;
     }
 
-    .content-container {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
+    .content-container,
+.contact-container {
+  width: clamp(320px, 88vw, 1250px);
+  margin: 0 auto;
+}
 
     .clean-card {
       background: #ffffff;
@@ -110,11 +111,26 @@
       box-shadow: 0 4px 14px rgba(0,0,0,0.03);
     }
 
-    .clean-card h3 {
-      font-size: 23px;
-      font-weight: 700;
-      color: #2B2622;
-      margin-top: 0;
+    .about-card,
+    .research-card,
+    .contact-container .clean-card {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about-card {
+      margin-bottom: 30px;
+    }
+
+    .about-card .row {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .about-button {
+      text-align: center;
+      margin-top: 20px;
     }
 
     .about-text {
@@ -137,11 +153,30 @@
     }
 
     .headshot-card img {
-      max-width: 425px;
+      max-width: 340px;
       width: 100%;
       border: 6px solid #ffffff;
       box-shadow: 0 4px 14px rgba(0,0,0,0.08);
     }
+
+    .research-interests-box {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.research-interests-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2B2622;
+}
+
+.research-interests-box p {
+  margin: 0;
+  color: #2B2622;
+}
 
     a {
       color: #2B2622;
@@ -151,30 +186,30 @@
       color: #111111;
     }
 
-  .btn-custom {
-  display: inline-block;
-  min-width: 340px;
-  background: #9A8572;
-  color: #151515 !important;
-  padding: 16px 28px;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-top: 8px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.2;
-}
+    .btn-custom {
+      display: inline-block;
+      min-width: 340px;
+      background: #9A8572;
+      color: #151515 !important;
+      padding: 16px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 8px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
 
-.btn-custom:hover {
-  background: #7A624C;
-  color: #2a2a2a !important;
-  text-decoration: none;
-}
+    .btn-custom:hover {
+      background: #7A624C;
+      color: #2a2a2a !important;
+      text-decoration: none;
+    }
+
     .research-card {
       text-align: center;
-      max-width: 760px;
-      margin: 0 auto 45px auto;
+      margin-bottom: 45px;
     }
 
     .research-card h2 {
@@ -187,69 +222,77 @@
     }
 
     .contact-container {
-      max-width: 760px;
-      margin: 0 auto;
+      margin-bottom: 45px;
     }
 
     .contact-container .lead {
       font-size: 18px;
     }
 
+    .clean-card h3 {
+      font-size: 23px;
+      font-weight: 700;
+      color: #2B2622;
+      margin-top: 0;
+    }
+
     .main-nav {
-  background: #f8f5ef !important;
-}
+      background: #f8f5ef !important;
+    }
 
-.main-nav div {
-  background: #7A624C !important;
-}
+    .main-nav div {
+      background: #7A624C !important;
+    }
 
-.main-nav h2 {
-  color: #111111 !important;
-}
+    .main-nav h2 {
+      color: #111111 !important;
+    }
 
-.main-nav ul,
-.main-nav li,
-.main-nav a {
-  background: #f8f5ef !important;
-  color: #111111 !important;
-}
+    .main-nav ul,
+    .main-nav li,
+    .main-nav a {
+      background: #f8f5ef !important;
+      color: #111111 !important;
+    }
 
-.main-nav a i {
-  color: #111111 !important;
-}
+    .main-nav a i {
+      color: #111111 !important;
+    }
 
-.main-nav li.active a,
-.main-nav li.active a:hover,
-.main-nav li a:hover {
-  background: #E8E1D8 !important;
-  color: #111111 !important;
-}
+    .main-nav li.active a,
+    .main-nav li.active a:hover,
+    .main-nav li a:hover {
+      background: #E8E1D8 !important;
+      color: #111111 !important;
+    }
 
-.contact-container,
-.contact-container p,
-.contact-container .lead,
-.contact-container a,
-.contact-container i {
-  color: #2B2622 !important;
-}
+    .contact-container,
+    .contact-container p,
+    .contact-container .lead,
+    .contact-container a,
+    .contact-container i {
+      color: #2B2622 !important;
+    }
 
-.contact-container a:hover {
-  color: #7A624C !important;
-}
-
+    .contact-container a:hover {
+      color: #7A624C !important;
+    }
   </style>
 </head>
 
 <body>
   <nav class="main-nav" id="main-nav">
-    <div style="height:80px;background:#aba091;padding-top:1px;">
-      <h2 class="text-center" style="color:#fff; letter-spacing:2px;">MENU</h2>
+    <div style="height:80px;background:#7A624C;padding-top:1px;">
+      <h2 class="text-center" style="color:#111111; letter-spacing:2px;">MENU</h2>
     </div>
 
     <ul class="nav nav-pills nav-stacked">
       <li class="active"><a href="#"><i class="fa-solid fa-house fa-fw"></i>&nbsp; Home</a></li>
-      <li><a href="#about"><i class="fa-solid fa-user fa-fw"></i>&nbsp; About</a></li>
       <li><a href="manuscripts.html"><i class="fa-solid fa-book fa-fw"></i>&nbsp; Research</a></li>
+      <li><a href="awards.html"><i class="fa-solid fa-award fa-fw"></i>&nbsp; Awards</a></li>
+      <li><a href="teaching.html"><i class="fa-solid fa-chalkboard-user fa-fw"></i>&nbsp; Teaching</a></li>
+      <li><a href="curriculum_vitae_2024.pdf" target="_blank"><i class="fa-solid fa-file-pdf fa-fw"></i>&nbsp; CV</a></li>
+      <li><a href="background.html"><i class="fa-solid fa-book-open fa-fw"></i>&nbsp; My Background</a></li>
       <li><a href="#contact"><i class="fa-solid fa-envelope fa-fw"></i>&nbsp; Contact</a></li>
     </ul>
   </nav>
@@ -281,33 +324,41 @@
     </div>
 
     <div class="container content-container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="headshot-card">
-            <img src="headshot.jpg" alt="Francy's headshot"> 
+      <div class="clean-card about-card">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="headshot-card">
+              <img src="headshot.jpg" alt="Francy's headshot">
+            </div>
+          
+            <div class="research-interests-box">
+              <h3>Research Interests</h3>
+              <p>
+                Latino Politics · Public Opinion · Political Communication · Political Psychology · Misinformation · Transnationalism · Social Media
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-8 about-text">
+            <p>
+              My research centers on how information environments shape political attitudes and behavior. Drawing on theories of political communication, political psychology, and public opinion, I examine how social ties, media, language, and misinformation influence political beliefs and participation, particularly among Latinos in the United States.
+            </p>            
+
+            <p>
+              I employ mixed methods, combining surveys, survey experiments, interviews, and computational analyses of social media data. Across projects, I investigate how individuals encounter political information and integrate it into political decision-making.
+            </p>            
+
+            <p>
+              In my book-style dissertation, I develop a theory of transnational information environments to explain how cross-border social ties and digital media shape the ways Latinos encounter, interpret, and respond to political information.
+            </p>
+
+            <p>
+              My research has been supported by the National Science Foundation Graduate Research Fellowship Program (GRFP), the American Political Science Association Dissertation Improvement Grant (DDRIG), and a number of competitive fellowships, grants, and awards. </p>
           </div>
         </div>
 
-        <div class="col-md-8">
-          <div class="clean-card about-text">
-            <h2>Francy D. Luna Diaz is a doctoral candidate in Political Science at the University of Michigan.</h2>
-
-            <p>
-              Her research centers on how information environments shape political attitudes and behavior. Drawing on theories of political communication, political psychology, and public opinion, she examines how social ties, media, language, and misinformation influence political beliefs and participation, particularly among Latinos in the United States.
-            </p>
-
-            <p>
-              In her book-style dissertation, she develops a theory of transnational information environments to explain how cross-border social ties and digital media shape the ways Latinos encounter, interpret, and respond to political information.
-            </p>
-
-            <p>
-              Her work has received support from the National Science Foundation, the American Political Science Association, and the University of Michigan through a number of competitive fellowships, grants, and awards.
-            </p>
-
-            <div style="text-align:center;">
-              <a href="curriculum_vitae_2024.pdf" class="btn-custom" target="_blank">View Curriculum Vitae</a>
-            </div>
-          </div>
+        <div class="about-button">
+          <a href="curriculum_vitae_2024.pdf" class="btn-custom" target="_blank">View Curriculum Vitae</a>
         </div>
       </div>
     </div>
@@ -319,17 +370,14 @@
 
     <div class="container content-container">
       <div class="clean-card research-card">
-        <h2>Research Projects</h2>
-      
+
         <p>
           View works in progress, manuscripts under review,
           and dissertation-related research.
         </p>
-      
+
         <p>
-          <a href="manuscripts.html" class="btn-custom">
-            View Manuscripts
-          </a>
+          <a href="manuscripts.html" class="btn-custom">View Manuscripts</a>
         </p>
       </div>
     </div>
@@ -341,23 +389,30 @@
 
     <div class="container contact-container">
       <div class="clean-card">
-        <h3>Find me here:</h3><p class="lead"><i class="fa-solid fa-location-dot"></i>&nbsp;Mail: 505 S State St, Haven Hall 5700. Ann Arbor, MI 48109, United States</p>
+        <h3>Find me here:</h3>
+
+        <p class="lead"><i class="fa-solid fa-location-dot"></i>&nbsp;Mail: 505 S State St, Haven Hall 5700. Ann Arbor, MI 48109, United States</p>
 
         <p class="lead"><i class="fa-solid fa-envelope"></i>&nbsp; Email: <a href="mailto:LunaDiaz@umich.edu">LunaDiaz@umich.edu</a></p>
-        
+
         <p class="lead"><i class="fa-solid fa-building-columns"></i>&nbsp;<a href="https://lsa.umich.edu/polisci/people/graduate-students/francy-luna-diaz.html">UMich Website</a></p>
-        
+
         <p class="lead"><i class="fa-brands fa-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/francylunadiaz/">LinkedIn</a></p>
-        
+
         <p class="lead"><i class="fa-solid fa-cloud"></i>&nbsp;<a href="https://bsky.app/profile/francy-lunadiaz.bsky.social">Bluesky</a></p>
-         </div>
+
+        <p class="lead"><i class="fa-solid fa-graduation-cap"></i>&nbsp;<a href="https://scholar.google.com/citations?user=ILk_aucAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+        
+        <p class="lead"><i class="fa-brands fa-orcid"></i>&nbsp;<a href="https://orcid.org/0009-0003-6795-1468" target="_blank">ORCID</a></p>
+      </div>
     </div>
 
     <div class="container">
       <footer>
-        <p class="pull-right">Have a nice day! &#9786;</p>
+        <p class="pull-right"> © 2026 Francy D. Luna Diaz | University of Michigan | Have a nice day! &#9786;</p>
       </footer>
     </div>
+
 
   </div>
 
