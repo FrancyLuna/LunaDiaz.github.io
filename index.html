@@ -10,7 +10,108 @@
 
   <style>
     body {
-      font-family: "Times New Roman", Times, serif;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #24384a;
+      background: #f4f6f9;
+      line-height: 1.55;
+    }
+
+    .jumbotron {
+      min-height: 320px !important;
+      padding-top: 60px !important;
+      padding-bottom: 60px !important;
+    }
+
+    .jumbotron .container {
+      margin-top: 40px !important;
+    }
+
+    .jumbotron h1 {
+      letter-spacing: 2px;
+    }
+
+    .section {
+      margin-top: 45px;
+      text-align: center;
+    }
+
+    .section h1 {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .section hr {
+      width: 70px;
+      border-top: 2px solid #24384a;
+    }
+
+    .content-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .clean-card {
+      background: #fff;
+      border: 1px solid #e2e6ea;
+      padding: 28px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+    }
+
+    .about-text {
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .about-text h2 {
+      font-size: 23px;
+      margin-top: 0;
+      color: #24384a;
+    }
+
+    .headshot-card {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      text-align: center;
+    }
+
+    .headshot-card img {
+      max-width: 320px;
+      width: 100%;
+      border: 6px solid #fff;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .btn-custom {
+      display: inline-block;
+      background: #24384a;
+      color: #fff !important;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 8px;
+    }
+
+    .btn-custom:hover {
+      background: #152434;
+      color: #fff !important;
+      text-decoration: none;
+    }
+
+    .research-card {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 45px auto;
+    }
+
+    .contact-container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .contact-container .lead {
+      font-size: 18px;
     }
   </style>
 </head>
@@ -23,7 +124,7 @@
     <ul class="nav nav-pills nav-stacked">
       <li class="active"><a href="#"><i class="fa fa-home fa-fw"></i>&nbsp; Home</a></li>
       <li><a href="#about"><i class="fa fa-user fa-fw"></i>&nbsp; About</a></li>
-      <li><a href="#what-i-do"><i class="fa fa-book fa-fw"></i>&nbsp; Works in Progress and Under Review</a></li>
+      <li><a href="#what-i-do"><i class="fa fa-book fa-fw"></i>&nbsp; Research</a></li>
       <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
   </nav>
@@ -31,12 +132,12 @@
   <div class="page-wrap">
 
     <div class="jumbotron">
-      <div style="margin-top:130px" class="container">
+      <div class="container">
         <a href="#main-nav" class="h5 open-menu">
-          <i style="color: #fff; position: relative; bottom: 120px; cursor: pointer;" class="fa fa-bars fa-2x fa-fw"></i>
+          <i style="color: #fff; position: relative; bottom: 40px; cursor: pointer;" class="fa fa-bars fa-2x fa-fw"></i>
         </a>
         <a href="#" class="h5 close-menu">
-          <i style="color: #fff; position: relative; bottom: 120px; cursor: pointer;" class="fa fa-times fa-2x fa-fw"></i>
+          <i style="color: #fff; position: relative; bottom: 40px; cursor: pointer;" class="fa fa-times fa-2x fa-fw"></i>
         </a>
         <h1>Francy D. Luna Diaz</h1>
         <div class="spacer"></div>
@@ -49,18 +150,19 @@
 
     <div class="section" id="about">
       <h1>About</h1>
+      <hr>
     </div>
 
-    <div class="container">
+    <div class="container content-container">
       <div class="row">
         <div class="col-md-4">
-          <div class="well">
-            <img src="https://github.com/FrancyLuna/LunaDiaz.github.io/blob/main/headshot.JPG?raw=true" alt="Francy's headshot" width="340">
+          <div class="headshot-card">
+            <img src="https://github.com/FrancyLuna/LunaDiaz.github.io/blob/main/headshot.JPG?raw=true" alt="Francy's headshot">
           </div>
         </div>
 
         <div class="col-md-8">
-          <div class="well" style="font-size: 17px; text-align: justify;">
+          <div class="clean-card about-text">
             <h2>Francy D. Luna Diaz, ABD in Political Science at the University of Michigan.</h2>
 
             <p>
@@ -76,49 +178,44 @@
             </p>
 
             <div style="text-align: center;">
-              <a href="curriculum_vitae_2024.pdf" class="btn btn-default" target="_blank">My CV</a>
+              <a href="curriculum_vitae_2024.pdf" class="btn-custom" target="_blank">My CV</a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  <div class="section" id="what-i-do" style="margin-top: 35px;">
-  <h1>Research</h1>
-  <hr>
-</div>
-
-<div class="container">
-  <div class="well" style="text-align: center;">
-    <h2>Works in Progress and Under Review</h2>
-    <p>Learn more about my dissertation, job market paper, and related manuscripts.</p>
-    <p><a href="manuscripts.html" class="btn btn-default">View Manuscripts</a></p>
-  </div>
-</div>
-
-    <div class="section" id="contact">
-      <h1>Let's Connect!</h1>
+    <div class="section" id="what-i-do">
+      <h1>Research</h1>
       <hr>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-4">
-          <h3>Contact Details</h3>
-          <div class="spacer"></div>
-          <p class="lead"><i class="fa fa-map-marker"></i>&nbsp; 505 S State St, Haven Hall 5700</p>
-          <p class="lead" style="text-indent:24px">Ann Arbor, MI 48109, United States</p>
-          <p class="lead"><i class="fa fa-envelope"></i>&nbsp; Email me at LunaDiaz@umich.edu</p>
-          <p class="lead"><i class="fa fa-university"></i>&nbsp;<a href="https://lsa.umich.edu/polisci/people/graduate-students/francy-luna-diaz.html"> Visit My UMich Website</a></p>
-          <p class="lead"><i class="fab fa-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/francylunadiaz/"> Find me on LinkedIn</a></p>
-          <p class="lead"><i class="fab fa-twitter"></i>&nbsp;<a href="https://x.com/Francy_LunaDiaz"> Follow me on X/Twitter</a></p>
-        </div>
+    <div class="container content-container">
+      <div class="clean-card research-card">
+        <h2>Works in Progress and Under Review</h2>
+        <p>Learn more about my dissertation, job market paper, and related manuscripts.</p>
+        <p><a href="manuscripts.html" class="btn-custom">View Manuscripts</a></p>
+      </div>
+    </div>
+
+    <div class="section" id="contact">
+      <h1>Let's Connect</h1>
+      <hr>
+    </div>
+
+    <div class="container contact-container">
+      <div class="clean-card">
+        <h3>Contact Details</h3>
+        <p class="lead"><i class="fa fa-map-marker"></i>&nbsp; 505 S State St, Haven Hall 5700</p>
+        <p class="lead" style="text-indent:24px">Ann Arbor, MI 48109, United States</p>
+        <p class="lead"><i class="fa fa-envelope"></i>&nbsp; Email me at <a href="mailto:LunaDiaz@umich.edu">LunaDiaz@umich.edu</a></p>
+        <p class="lead"><i class="fa fa-university"></i>&nbsp;<a href="https://lsa.umich.edu/polisci/people/graduate-students/francy-luna-diaz.html">Visit My UMich Website</a></p>
+        <p class="lead"><i class="fab fa-linkedin"></i>&nbsp;<a href="https://www.linkedin.com/in/francylunadiaz/">Find me on LinkedIn</a></p>
+        <p class="lead"><i class="fab fa-twitter"></i>&nbsp;<a href="https://x.com/Francy_LunaDiaz">Follow me on X/Twitter</a></p>
       </div>
     </div>
 
     <div class="container">
-      <div class="spacer"></div>
-      <div class="spacer"></div>
       <footer>
         <p class="pull-right">Have a nice day! &#9786;</p>
       </footer>
