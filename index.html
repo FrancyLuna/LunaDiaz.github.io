@@ -282,7 +282,64 @@
     .contact-container a:hover {
       color: #7A624C !important;
     }
-    @media (max-width: 768px) {
+
+.clean-card,    
+.clean-card p,
+.clean-card li,
+.about-text,
+.about-text p,
+.research-card,
+.research-card p,
+.contact-container,
+.contact-container p,
+.contact-container .lead {
+  color: #2B2622 !important;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 9998;
+  background: #7A624C !important;
+  color: #111111 !important;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #5F4C3B;
+}
+
+.mobile-sticky-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .research-interests-box {
+    display: none;
+  }
+
+  .sticky-header {
+    display: none;
+  }
+
+  .mobile-sticky-menu {
+    display: block;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 10000;
+    color: #111111 !important;
+    background: #B8A18B;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+
+  .mobile-sticky-menu i {
+    color: #111111 !important;
+  }
+
   .jumbotron {
     height: 220px !important;
     min-height: 220px !important;
@@ -330,10 +387,6 @@
     display: block;
   }
 
-  .research-interests-box {
-    margin-bottom: 24px;
-  }
-
   .about-text {
     font-size: 16px;
     text-align: left;
@@ -363,43 +416,6 @@
     line-height: 1.5;
   }
 }
-
-.sticky-header {
-  position: sticky;
-  top: 0;
-  z-index: 9998;
-  background: #7A624C !important;
-  color: #111111 !important;
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 10px 15px;
-  border-bottom: 1px solid #5F4C3B;
-}
-
-.mobile-sticky-menu {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .mobile-sticky-menu {
-    display: block;
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    z-index: 10000;
-    color: #111111 !important;
-    background: #B8A18B;
-    padding: 8px 10px;
-    border-radius: 4px;
-    text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-
-  .mobile-sticky-menu i {
-    color: #111111 !important;
-  }
-}
   </style>
 </head>
 
@@ -420,7 +436,7 @@
       <li><a href="manuscripts.html"><i class="fa-solid fa-book fa-fw"></i>&nbsp; Research</a></li>
       <li><a href="awards.html"><i class="fa-solid fa-award fa-fw"></i>&nbsp; Awards</a></li>
       <li><a href="teaching.html"><i class="fa-solid fa-chalkboard-user fa-fw"></i>&nbsp; Teaching</a></li>
-      <li><a href="curriculum_vitae_2024.pdf" target="_blank"><i class="fa-solid fa-file-pdf fa-fw"></i>&nbsp; CV</a></li>
+      <li><a href="cv.pdf" target="_blank"><i class="fa-solid fa-file-pdf fa-fw"></i>&nbsp; CV</a></li>
       <li><a href="background.html"><i class="fa-solid fa-book-open fa-fw"></i>&nbsp; My Background</a></li>
       <li><a href="#contact"><i class="fa-solid fa-envelope fa-fw"></i>&nbsp; Contact</a></li>
     </ul>
@@ -487,7 +503,7 @@
         </div>
 
         <div class="about-button">
-          <a href="curriculum_vitae_2024.pdf" class="btn-custom" target="_blank">View Curriculum Vitae</a>
+          <a href="cv.pdf" class="btn-custom" target="_blank">View Curriculum Vitae</a>
         </div>
       </div>
     </div>
@@ -541,11 +557,6 @@
         <p class="pull-right"> © 2026 Francy D. Luna Diaz | University of Michigan | Have a nice day! &#9786;</p>
       </footer>
     </div>
-
-
   </div>
-
 </body>
-
-
 </html>
