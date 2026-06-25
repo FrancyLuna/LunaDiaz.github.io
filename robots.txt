@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://francylunadiaz.com/sitemap.xml
