@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>https://francylunadiaz.com/</loc>
-  </url>
+<url>
+  <loc>https://francylunadiaz.com/</loc>
+  <lastmod>2026-06-25</lastmod>
+</url>
 
   <url>
     <loc>https://francylunadiaz.com/background.html</loc>
@@ -20,5 +21,9 @@
   <url>
     <loc>https://francylunadiaz.com/teaching.html</loc>
   </url>
+
+<url>
+  <loc>https://francylunadiaz.com/cv.pdf</loc>
+</url>
 
 </urlset>
